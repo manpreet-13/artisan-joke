@@ -1,0 +1,27 @@
+{
+    "name": "manpreet/artisan-joke",
+    "description": "This is my first package",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manpreet Singh",
+            "email": "securewebmanpreet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4": {
+            "manpreet\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "manpreet\\Commands\\ArtisanJokeServiceProvider" 
+            ]
+        }
+    }
+}
